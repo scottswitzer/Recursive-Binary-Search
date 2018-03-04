@@ -1,7 +1,7 @@
 # Recursive Binary Search
-Implemented in the ARMv7 instruction set following ARM calling conventions.
+This is an assembly program written in the ARMv7 instruction set to exercise the ARM calling conventions. The interface is designed such that the user can run it on the ARM Cortex-A9 onboard the DE1-SoC.
 
-I assembled the function from C as defined below:
+The program implements the binary search function in C as defined below:
 ```
 int binary_search(int *numbers, int key, int startIndex, int endIndex, int NumCalls) {
   
@@ -26,4 +26,3 @@ int binary_search(int *numbers, int key, int startIndex, int endIndex, int NumCa
   return keyIndex;
 }
 ```
-Note that this assembly program is written such that the user can run it on the ARM Cortex-A9 onboard the DE1-SoC.
